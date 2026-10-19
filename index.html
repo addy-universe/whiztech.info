@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WhizTech | Enterprise-Grade Software & Cloud Solutions</title>
+  <meta name="description" content="WhizTech architects resilient software that powers industry leaders. From custom enterprise software and cloud migration to intuitive iOS/Android applications.">
+  <meta name="keywords" content="WhizTech, enterprise software, cloud migration, mobile app development, cybersecurity, IT consultation, Edmonton IT firm">
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="WhizTech | Enterprise-Grade Software & Cloud Solutions">
+  <meta property="og:description" content="We architect resilient software that powers industry leaders. Accelerate your digital roadmap with WhizTech.">
+  
+  <!-- Google Fonts (Outfit & Plus Jakarta Sans for Luxury Tech Typography) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png?v=3">
+  <link rel="apple-touch-icon" href="favicon.png?v=3">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-dark text-slate antialiased">
+
+  <!-- Ambient Cursor Halo (High-End Subtle Hardware-Accelerated Glow) -->
+  <div class="cursor-ambient-halo" id="cursor-halo"></div>
+
+  <!-- Background Ambient Glow & Grid -->
+  <div class="fixed-background" aria-hidden="true">
+    <div class="glow-orb orb-primary"></div>
+    <div class="glow-orb orb-secondary"></div>
+    <div class="glow-orb orb-tertiary"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <!-- Header / Navbar -->
+  <header id="main-header" class="site-header">
+    <div class="container header-container">
+      <a href="#" class="brand-logo" aria-label="WhizTech Home">
+        <div class="logo-wrapper">
+          <img src="whiztech.png?v=2" alt="WhizTech" class="brand-img-logo">
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#capabilities" class="nav-link">Capabilities</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <button id="nav-cta-btn" class="btn btn-primary btn-sm" onclick="openConsultationModal()">
+          <span>Schedule a Consultation</span>
+          <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </button>
+
+        <!-- Mobile Menu Trigger -->
+        <button id="mobile-menu-btn" class="hamburger-btn" aria-label="Open mobile navigation menu" aria-expanded="false">
+          <span class="bar bar-1"></span>
+          <span class="bar bar-2"></span>
+          <span class="bar bar-3"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Backdrop & Drawer -->
+  <div id="mobile-drawer" class="mobile-drawer" aria-hidden="true">
+    <div class="mobile-drawer-content">
+      <div class="mobile-drawer-header">
+        <div class="logo-wrapper">
+          <img src="whiztech.png?v=2" alt="WhizTech" class="brand-img-logo" style="height: 32px;">
+        </div>
+        <button id="close-drawer-btn" class="drawer-close-btn" aria-label="Close menu">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <nav class="mobile-nav" aria-label="Mobile Navigation">
+        <ul class="mobile-nav-links">
+          <li>
+            <a href="#services" class="mobile-nav-link">
+              <span>Services</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="#capabilities" class="mobile-nav-link">
+              <span>Capabilities</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="#about" class="mobile-nav-link">
+              <span>About</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="#testimonials" class="mobile-nav-link">
+              <span>Testimonials</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="#contact" class="mobile-nav-link">
+              <span>Contact</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="mobile-drawer-footer">
+        <button class="btn btn-primary w-full" onclick="openConsultationModal(); toggleMobileDrawer(false);">
+          <span>Schedule a Consultation</span>
+        </button>
+        <div class="mobile-contact-snippet">
+          <p><a href="tel:+18254601154">+1 (825) 460 1154</a></p>
+          <p><a href="mailto:info@whiztech.info">info@whiztech.info</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <!-- Main Headline -->
+          <h1 class="hero-headline">
+            We architect <span class="gradient-text">resilient software</span> that powers industry leaders.
+          </h1>
+
+          <!-- Sub-headline -->
+          <p class="hero-subheadline">
+            From custom enterprise software and cloud migration to intuitive iOS/Android applications—WhizTech accelerates your digital roadmap with precision engineering.
+          </p>
+
+          <!-- Dual CTA Buttons -->
+          <div class="hero-cta-group">
+            <a href="#contact" class="btn btn-primary btn-lg">
+              <span>Start a Project</span>
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+            <a href="#services" class="btn btn-secondary btn-lg">
+              <span>Explore Services</span>
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M19 9l-7 7-7-7"/>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Trust Badges -->
+          <div class="hero-trust-bar">
+            <span class="trust-label">TRUSTED BY FORWARD-THINKING TEAMS</span>
+            <div class="trust-tags">
+              <span class="trust-tag">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                SOC2 Type II Ready
+              </span>
+              <span class="trust-tag">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                Zero-Downtime Pipeline
+              </span>
+              <span class="trust-tag">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                Predictable SLAs
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual: Enterprise Architecture Interactive Hub -->
+        <div class="hero-visual-wrapper">
+          <div class="hero-terminal-card glass-panel">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <div class="terminal-title">whiztech-runtime-orchestration.io</div>
+              <div class="terminal-badge">LIVE CLOUD CLUSTER</div>
+            </div>
+
+            <div class="terminal-body">
+              <div class="arch-flow">
+                <!-- Flow Node 1 -->
+                <div class="arch-node">
+                  <div class="node-icon bg-blue-subtle">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                      <line x1="8" y1="21" x2="16" y2="21"/>
+                      <line x1="12" y1="17" x2="12" y2="21"/>
+                    </svg>
+                  </div>
+                  <div class="node-meta">
+                    <span class="node-name">Client Layer</span>
+                    <span class="node-spec">Web • iOS • Android</span>
+                  </div>
+                  <span class="node-status text-emerald">Active</span>
+                </div>
+
+                <div class="flow-connector">
+                  <span class="flow-line"></span>
+                  <span class="flow-pulse"></span>
+                </div>
+
+                <!-- Flow Node 2 -->
+                <div class="arch-node active-pulse">
+                  <div class="node-icon bg-cyan-subtle">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+                      <polyline points="2 17 12 22 22 17"/>
+                      <polyline points="2 12 12 17 22 12"/>
+                    </svg>
+                  </div>
+                  <div class="node-meta">
+                    <span class="node-name">WhizTech API Mesh</span>
+                    <span class="node-spec">Microservices &amp; gRPC</span>
+                  </div>
+                  <span class="node-status text-cyan live-telemetry-ping" id="live-latency-val">0.8ms</span>
+                </div>
+
+                <div class="flow-connector">
+                  <span class="flow-line"></span>
+                  <span class="flow-pulse"></span>
+                </div>
+
+                <!-- Flow Node 3 -->
+                <div class="arch-node">
+                  <div class="node-icon bg-blue-subtle">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/>
+                    </svg>
+                  </div>
+                  <div class="node-meta">
+                    <span class="node-name">Multi-Cloud Fabric</span>
+                    <span class="node-spec">AWS • Azure • Kubernetes</span>
+                  </div>
+                  <span class="node-status text-emerald">99.99%</span>
+                </div>
+              </div>
+
+              <!-- Terminal Live Metrics -->
+              <div class="terminal-stats-grid">
+                <div class="stat-pill">
+                  <span class="stat-label">Security Shield</span>
+                  <span class="stat-val text-emerald">Zero-Trust Active</span>
+                </div>
+                <div class="stat-pill">
+                  <span class="stat-label">Throughput</span>
+                  <span class="stat-val text-cyan live-telemetry-ping" id="live-throughput-val">48.2k req/s</span>
+                </div>
+                <div class="stat-pill">
+                  <span class="stat-label">Automated Failover</span>
+                  <span class="stat-val text-blue">Multi-Region Synced</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Metric Strip -->
+      <div class="metric-strip-wrapper">
+        <div class="container">
+          <div class="metric-strip glass-panel">
+            <div class="metric-item">
+              <div class="metric-number" data-target="99.9" data-suffix="%">99.9%</div>
+              <div class="metric-label">SLA Uptime</div>
+              <div class="metric-sub">Enterprise reliability guarantee</div>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <div class="metric-number" data-target="120" data-suffix="+">120+</div>
+              <div class="metric-label">Systems Deployed</div>
+              <div class="metric-sub">Production-grade ecosystems</div>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <div class="metric-number" data-target="4.9" data-suffix="/5">4.9/5</div>
+              <div class="metric-label">Client Rating</div>
+              <div class="metric-sub">Verified enterprise satisfaction</div>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <div class="metric-number">24/7</div>
+              <div class="metric-label">DevOps Support</div>
+              <div class="metric-sub">Global rapid incident response</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Grid (6-Card Responsive Bento/Grid Layout) -->
+    <section id="services" class="section services-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-tag">COMPREHENSIVE CAPABILITIES</div>
+          <h2 class="section-title">End-to-End Specialized Services</h2>
+          <p class="section-subtitle">
+            Tailored engineering solutions built for mission-critical reliability, modular scalability, and measurable business impact.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Card 1: Software Development -->
+          <div class="service-card glass-panel reveal-init" data-tilt>
+            <div class="card-glow-bg"></div>
+            <div class="service-icon-wrapper">
+              <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="16 18 22 12 16 6"/>
+                <polyline points="8 6 2 12 8 18"/>
+              </svg>
+            </div>
+            <div class="service-meta">
+              <span class="service-category">CORE ENGINEERING</span>
+              <h3 class="service-name">Software Development</h3>
+              <p class="service-desc">
+                Custom software solutions tailored to business needs, including enterprise platforms, distributed APIs, and scalable SaaS systems.
+              </p>
+            </div>
+            <ul class="service-features">
+              <li>Distributed Microservices Architecture</li>
+              <li>High-Concurrency REST &amp; gRPC APIs</li>
+              <li>Fault-Tolerant Enterprise Software</li>
+            </ul>
+            <div class="service-card-footer">
+              <span class="tech-tag">TypeScript</span>
+              <span class="tech-tag">Go</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">PostgreSQL</span>
+            </div>
+          </div>
+
+          <!-- Card 2: Web Development -->
+          <div class="service-card glass-panel reveal-init" data-tilt>
+            <div class="card-glow-bg"></div>
+            <div class="service-icon-wrapper">
+              <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="2" y1="12" x2="22" y2="12"/>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+              </svg>
+            </div>
+            <div class="service-meta">
+              <span class="service-category">WEB PLATFORMS</span>
+              <h3 class="service-name">Web Development</h3>
+              <p class="service-desc">
+                Responsive, user-friendly websites and web applications engineered for low latency, high conversion, and Core Web Vitals.
+              </p>
+            </div>
+            <ul class="service-features">
+              <li>Sub-second Time-to-Interactive (TTI)</li>
+              <li>Accessible, High-Conversion UX/UI</li>
+              <li>Enterprise CMS &amp; Headless Architectures</li>
+            </ul>
+            <div class="service-card-footer">
+              <span class="tech-tag">Next.js</span>
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">Vercel</span>
+            </div>
+          </div>
+
+          <!-- Card 3: Mobile Application Development -->
+          <div class="service-card glass-panel reveal-init" data-tilt>
+            <div class="card-glow-bg"></div>
+            <div class="service-icon-wrapper">
+              <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+                <line x1="12" y1="18" x2="12.01" y2="18"/>
+              </svg>
+            </div>
+            <div class="service-meta">
+              <span class="service-category">MOBILE ECOSYSTEM</span>
+              <h3 class="service-name">Mobile Application Development</h3>
+              <p class="service-desc">
+                Intuitive, high-performance mobile applications for iOS and Android platforms.
+              </p>
+            </div>
+            <ul class="service-features">
+              <li>Native Performance &amp; Fluid 120fps UI</li>
+              <li>Offline-First Sync &amp; Local Encryption</li>
+              <li>Seamless App Store &amp; Play Store Pipelines</li>
+            </ul>
+            <div class="service-card-footer">
+              <span class="tech-tag">iOS Swift</span>
+              <span class="tech-tag">Kotlin</span>
+              <span class="tech-tag">React Native</span>
+              <span class="tech-tag">Flutter</span>
+            </div>
+          </div>
+
+          <!-- Card 4: Cloud Services -->
+          <div class="service-card glass-panel reveal-init" data-tilt>
+            <div class="card-glow-bg"></div>
+            <div class="service-icon-wrapper">
+              <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/>
+              </svg>
+            </div>
+            <div class="service-meta">
+              <span class="service-category">INFRASTRUCTURE</span>
+              <h3 class="service-name">Cloud Services</h3>
+              <p class="service-desc">
+                Cloud computing architecture, seamless cloud migration, secure data storage, and automated infrastructure management.
+              </p>
+            </div>
+            <ul class="service-features">
+              <li>Infrastructure-as-Code (Terraform / Pulumi)</li>
+              <li>Multi-Cloud Migration with Zero Downtime</li>
+              <li>Cost Optimization &amp; FinOps Governance</li>
+            </ul>
+            <div class="service-card-footer">
+              <span class="tech-tag">AWS</span>
+              <span class="tech-tag">Azure</span>
+              <span class="tech-tag">Kubernetes</span>
+              <span class="tech-tag">Terraform</span>
+            </div>
+          </div>
+
+          <!-- Card 5: Cybersecurity Solutions -->
+          <div class="service-card glass-panel reveal-init" data-tilt>
+            <div class="card-glow-bg"></div>
+            <div class="service-icon-wrapper">
+              <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                <path d="M12 8v4"/>
+                <path d="M12 16h.01"/>
+              </svg>
+            </div>
+            <div class="service-meta">
+              <span class="service-category">DEFENSE &amp; TRUST</span>
+              <h3 class="service-name">Cybersecurity Solutions</h3>
+              <p class="service-desc">
+                Threat defense, vulnerability mitigation, data protection, and enterprise compliance standards.
+              </p>
+            </div>
+            <ul class="service-features">
+              <li>Zero-Trust Network Architecture (ZTNA)</li>
+              <li>Automated CI/CD Vulnerability Scanning</li>
+              <li>SOC2, ISO 27001 &amp; HIPAA Compliance Audits</li>
+            </ul>
+            <div class="service-card-footer">
+              <span class="tech-tag">Zero-Trust</span>
+              <span class="tech-tag">Pen Testing</span>
+              <span class="tech-tag">SIEM</span>
+              <span class="tech-tag">WAF</span>
+            </div>
+          </div>
+
+          <!-- Card 6: IT Consultation -->
+          <div class="service-card glass-panel reveal-init" data-tilt>
+            <div class="card-glow-bg"></div>
+            <div class="service-icon-wrapper">
+              <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="3"/>
+                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+              </svg>
+            </div>
+            <div class="service-meta">
+              <span class="service-category">STRATEGY &amp; ADVISORY</span>
+              <h3 class="service-name">IT Consultation</h3>
+              <p class="service-desc">
+                Strategic technology roadmaps, IT infrastructure optimization, and fractional CTO advisory.
+              </p>
+            </div>
+            <ul class="service-features">
+              <li>Legacy Modernization Roadmaps</li>
+              <li>Fractional Executive Engineering Leadership</li>
+              <li>Cost-Efficient Technology Stack Audits</li>
+            </ul>
+            <div class="service-card-footer">
+              <span class="tech-tag">Enterprise Architecture</span>
+              <span class="tech-tag">Auditing</span>
+              <span class="tech-tag">ROI Analysis</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Capabilities & Tech Stack Section -->
+    <section id="capabilities" class="section capabilities-section">
+      <div class="container">
+        <div class="capabilities-box glass-panel reveal-init">
+          <div class="capabilities-grid">
+            <div class="capabilities-left">
+              <div class="section-tag">ENGINEERING STANDARDS</div>
+              <h2 class="section-title">Built for Mission-Critical Production</h2>
+              <p class="text-slate">
+                We combine battle-tested open standards with cutting-edge cloud primitives to guarantee peak resilience, maintainability, and horizontal scalability.
+              </p>
+
+              <div class="capability-pills">
+                <div class="cap-pill">
+                  <div class="cap-pill-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                  </div>
+                  <div>
+                    <h4 class="cap-pill-title">Zero-Downtime Blue/Green Deployments</h4>
+                    <p class="cap-pill-desc">Continuous deployment pipelines that deliver updates without disrupting active users.</p>
+                  </div>
+                </div>
+
+                <div class="cap-pill">
+                  <div class="cap-pill-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                  </div>
+                  <div>
+                    <h4 class="cap-pill-title">Elastic Autoscaling &amp; Load Balancing</h4>
+                    <p class="cap-pill-desc">Adaptive cloud orchestration managing dynamic traffic spikes seamlessly.</p>
+                  </div>
+                </div>
+
+                <div class="cap-pill">
+                  <div class="cap-pill-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                  </div>
+                  <div>
+                    <h4 class="cap-pill-title">End-to-End Cryptographic Security</h4>
+                    <p class="cap-pill-desc">mTLS internal communication, KMS data-at-rest encryption, and strict IAM governance.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="capabilities-right">
+              <div class="tech-stack-matrix">
+                <div class="matrix-header">
+                  <span class="matrix-title">PRODUCTION TECH STACK</span>
+                  <span class="matrix-badge">STABLE RELEASES</span>
+                </div>
+                <div class="matrix-category">
+                  <span class="cat-label">Cloud &amp; DevOps</span>
+                  <div class="tag-cloud">
+                    <span class="matrix-tag">Amazon Web Services</span>
+                    <span class="matrix-tag">Google Cloud</span>
+                    <span class="matrix-tag">Microsoft Azure</span>
+                    <span class="matrix-tag">Kubernetes</span>
+                    <span class="matrix-tag">Docker</span>
+                    <span class="matrix-tag">Terraform</span>
+                  </div>
+                </div>
+                <div class="matrix-category">
+                  <span class="cat-label">Backend &amp; Data</span>
+                  <div class="tag-cloud">
+                    <span class="matrix-tag">Go</span>
+                    <span class="matrix-tag">Python</span>
+                    <span class="matrix-tag">Node.js</span>
+                    <span class="matrix-tag">PostgreSQL</span>
+                    <span class="matrix-tag">Redis</span>
+                    <span class="matrix-tag">Kafka</span>
+                  </div>
+                </div>
+                <div class="matrix-category">
+                  <span class="cat-label">Frontend &amp; Mobile</span>
+                  <div class="tag-cloud">
+                    <span class="matrix-tag">React / Next.js</span>
+                    <span class="matrix-tag">TypeScript</span>
+                    <span class="matrix-tag">Swift (iOS)</span>
+                    <span class="matrix-tag">Kotlin (Android)</span>
+                    <span class="matrix-tag">Tailwind / CSS3</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-content">
+            <div class="section-tag">WHO WE ARE</div>
+            <!-- Headline -->
+            <h2 class="section-title">Engineering Solutions Aligned with Business Goals</h2>
+            <!-- Copy -->
+            <p class="about-copy">
+              WhizTech is a forward-thinking IT firm committed to empowering businesses with innovative and tailored technology solutions. Our team of skilled professionals combines technical expertise with creative problem-solving to design and implement solutions that are practical, sustainable, and future-ready.
+            </p>
+
+            <div class="about-values">
+              <div class="value-item">
+                <div class="value-bullet">01</div>
+                <div>
+                  <h4 class="value-title">Business-First Alignment</h4>
+                  <p class="value-text">We don’t build tech for technology's sake. Every architectural choice directly impacts revenue, operational efficiency, or market differentiation.</p>
+                </div>
+              </div>
+              <div class="value-item">
+                <div class="value-bullet">02</div>
+                <div>
+                  <h4 class="value-title">Rigorous Engineering</h4>
+                  <p class="value-text">Clean code standards, automated testing suites, and peer-reviewed pull requests protect your core IP and avoid long-term technical debt.</p>
+                </div>
+              </div>
+              <div class="value-item">
+                <div class="value-bullet">03</div>
+                <div>
+                  <h4 class="value-title">Sustainable &amp; Future-Ready</h4>
+                  <p class="value-text">Modular designs that evolve as your company scales from hundreds to millions of transactions without costly rebuilds.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-card-col">
+            <div class="about-feature-box glass-panel">
+              <div class="feature-box-header">
+                <div class="feature-box-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                    <polyline points="10 9 9 9 8 9"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="box-title">Our Delivery Framework</h4>
+                  <p class="box-subtitle">Predictable, sprint-based milestones</p>
+                </div>
+              </div>
+
+              <div class="framework-steps">
+                <div class="step-row">
+                  <span class="step-num">Phase 1</span>
+                  <div class="step-info">
+                    <span class="step-name">Discovery &amp; System Architecture</span>
+                    <span class="step-detail">Deep technical requirements, threat modeling &amp; roadmap</span>
+                  </div>
+                </div>
+                <div class="step-row">
+                  <span class="step-num">Phase 2</span>
+                  <div class="step-info">
+                    <span class="step-name">Iterative Sprint Execution</span>
+                    <span class="step-detail">Bi-weekly demo builds, automated testing &amp; staging previews</span>
+                  </div>
+                </div>
+                <div class="step-row">
+                  <span class="step-num">Phase 3</span>
+                  <div class="step-info">
+                    <span class="step-name">Hardened Deployment &amp; Handover</span>
+                    <span class="step-detail">Zero-downtime cutover, documentation &amp; engineer onboarding</span>
+                  </div>
+                </div>
+                <div class="step-row">
+                  <span class="step-num">Phase 4</span>
+                  <div class="step-info">
+                    <span class="step-name">24/7 DevOps &amp; SLA Management</span>
+                    <span class="step-detail">Proactive monitoring, latency tuning &amp; dedicated support</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="framework-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon-sm">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+                <span>Certified Enterprise Delivery Assurance</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section (3 Clean Card Reviews) -->
+    <section id="testimonials" class="section testimonials-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-tag">TESTIMONIALS</div>
+          <h2 class="section-title">Validated by Industry Leaders</h2>
+          <p class="section-subtitle">
+            See how WhizTech’s technical precision and collaborative execution drive tangible outcomes for our clients.
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          <!-- Review 1 -->
+          <div class="testimonial-card glass-panel reveal-init spotlight-card">
+            <div class="testimonial-rating" aria-label="5 out of 5 stars">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <blockquote class="testimonial-quote">
+              "WhizTech provided invaluable IT consultation services that streamlined our operations and improved efficiency. Their insights were tailored to our exact needs."
+            </blockquote>
+            <div class="testimonial-author">
+              <div class="author-avatar">EZ</div>
+              <div class="author-meta">
+                <div class="author-name">Emily Zhang</div>
+                <div class="author-role">IT Manager at <span class="company-name">CloudSphere</span></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="testimonial-card glass-panel reveal-init spotlight-card">
+            <div class="testimonial-rating" aria-label="5 out of 5 stars">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <blockquote class="testimonial-quote">
+              "Working with WhizTech on our web development was a seamless experience. They created a stunning, user-friendly platform that boosted our engagement."
+            </blockquote>
+            <div class="testimonial-author">
+              <div class="author-avatar">SM</div>
+              <div class="author-meta">
+                <div class="author-name">Sarah Mitchell</div>
+                <div class="author-role">Marketing Director at <span class="company-name">BrightWave Media</span></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="testimonial-card glass-panel reveal-init spotlight-card">
+            <div class="testimonial-rating" aria-label="5 out of 5 stars">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <blockquote class="testimonial-quote">
+              "WhizTech transformed our business with their innovative software solutions. Their team was professional, responsive, and delivered beyond expectations."
+            </blockquote>
+            <div class="testimonial-author">
+              <div class="author-avatar">JC</div>
+              <div class="author-meta">
+                <div class="author-name">John Carter</div>
+                <div class="author-role">CEO at <span class="company-name">NexGen Solutions</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Lead Capture Section -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="contact-wrapper glass-panel reveal-init">
+          <div class="contact-grid">
+            <!-- Left Column: Contact Meta -->
+            <div class="contact-meta-col">
+              <div class="section-tag">INITIATE ENGAGEMENT</div>
+              <h2 class="contact-title">Let’s Architect Your Next Technical Milestone</h2>
+              <p class="contact-desc">
+                Whether you need a full enterprise platform overhaul, cloud modernization, or dedicated software engineering support, our leadership team is ready to assist.
+              </p>
+
+              <div class="contact-info-list">
+                <!-- Address -->
+                <div class="contact-info-item">
+                  <div class="contact-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                  </div>
+                  <div class="contact-details">
+                    <span class="contact-label">Headquarters</span>
+                    <address class="contact-value not-italic">
+                      17878 106 Ave NW, Edmonton, Alberta T5S 1V4
+                    </address>
+                  </div>
+                </div>
+
+                <!-- Phone -->
+                <div class="contact-info-item">
+                  <div class="contact-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                    </svg>
+                  </div>
+                  <div class="contact-details">
+                    <span class="contact-label">Direct Phone</span>
+                    <a href="tel:+18254601154" class="contact-value link-accent">
+                      +1 (825) 460 1154
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Email -->
+                <div class="contact-info-item">
+                  <div class="contact-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                      <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                  </div>
+                  <div class="contact-details">
+                    <span class="contact-label">Official Correspondence</span>
+                    <a href="mailto:info@whiztech.info" class="contact-value link-accent">
+                      info@whiztech.info
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Response Guarantee Card -->
+              <div class="response-guarantee">
+                <div class="guarantee-header">
+                  <span class="pulse-dot"></span>
+                  <span class="guarantee-title">SLA-Backed Response Commitment</span>
+                </div>
+                <p class="guarantee-text">
+                  Direct review by a Senior Solutions Architect within 2 business hours. Non-disclosure agreement (NDA) provided upon request.
+                </p>
+              </div>
+            </div>
+
+            <!-- Right Column: Modern Intake Form -->
+            <div class="contact-form-col">
+              <form id="lead-intake-form" class="lead-form" novalidate>
+                <div class="form-header">
+                  <h3 class="form-title">Request Enterprise Scope</h3>
+                  <p class="form-sub">Complete the form below to receive an architectural estimate.</p>
+                </div>
+
+                <!-- Full Name -->
+                <div class="form-group">
+                  <label for="fullName" class="form-label">Full Name <span class="required">*</span></label>
+                  <div class="input-wrapper">
+                    <input type="text" id="fullName" name="fullName" class="form-input" placeholder="e.g. Alexander Vance" required>
+                  </div>
+                  <span class="field-error" id="fullName-error">Please enter your full name</span>
+                </div>
+
+                <!-- Business Email -->
+                <div class="form-group">
+                  <label for="businessEmail" class="form-label">Business Email <span class="required">*</span></label>
+                  <div class="input-wrapper">
+                    <input type="email" id="businessEmail" name="businessEmail" class="form-input" placeholder="name@company.com" required>
+                  </div>
+                  <span class="field-error" id="businessEmail-error">Please enter a valid work email address</span>
+                </div>
+
+                <!-- Service Needed Dropdown -->
+                <div class="form-group">
+                  <label for="serviceNeeded" class="form-label">Service Needed <span class="required">*</span></label>
+                  <div class="select-wrapper">
+                    <select id="serviceNeeded" name="serviceNeeded" class="form-select" required>
+                      <option value="" disabled selected>Select an engineering practice...</option>
+                      <option value="software-development">Software Development (Custom SaaS / APIs)</option>
+                      <option value="web-development">Web Development (Modern Web Applications)</option>
+                      <option value="mobile-development">Mobile Application Development (iOS / Android)</option>
+                      <option value="cloud-services">Cloud Services &amp; Migration Architecture</option>
+                      <option value="cybersecurity">Cybersecurity Solutions &amp; Compliance</option>
+                      <option value="it-consultation">Strategic IT Consultation &amp; CTO Advisory</option>
+                    </select>
+                    <svg class="select-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <polyline points="6 9 12 15 18 9"/>
+                    </svg>
+                  </div>
+                  <span class="field-error" id="serviceNeeded-error">Please select a primary service</span>
+                </div>
+
+                <!-- Project Scope Textarea -->
+                <div class="form-group">
+                  <label for="projectScope" class="form-label">Project Scope <span class="required">*</span></label>
+                  <div class="textarea-wrapper">
+                    <textarea id="projectScope" name="projectScope" class="form-textarea" rows="4" placeholder="Briefly describe your business challenge, existing technical stack, target timelines, or specific requirements..." required></textarea>
+                  </div>
+                  <span class="field-error" id="projectScope-error">Please provide a brief outline of your project</span>
+                </div>
+
+                <!-- Cloudflare Turnstile Simulated Protection Widget -->
+                <div class="turnstile-container">
+                  <div class="turnstile-box" id="turnstile-box" onclick="toggleTurnstileCheck()">
+                    <div class="turnstile-left">
+                      <div class="turnstile-checkbox" id="turnstile-checkbox" role="checkbox" aria-checked="false" tabindex="0">
+                        <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                          <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                        <div class="spinner-icon"></div>
+                      </div>
+                      <span class="turnstile-status-text" id="turnstile-status-text">Verify you are human</span>
+                    </div>
+                    <div class="turnstile-right">
+                      <div class="cf-logo-block">
+                        <svg class="cf-icon" viewBox="0 0 100 40" fill="currentColor">
+                          <!-- Cloudflare Cloud SVG Mark -->
+                          <path fill="#f38020" d="M37.5 25.5c-.3-1.8-1.5-3.3-3.2-3.8.3-.9.5-1.9.5-2.9 0-4.3-3.5-7.8-7.8-7.8-2.6 0-4.9 1.3-6.3 3.3C19.8 13.5 18.9 13 18 13c-2.8 0-5 2.2-5 5 0 .4.1.8.2 1.2-3.5.7-6.2 3.8-6.2 7.5 0 4.2 3.4 7.6 7.6 7.6h22.6c3.2 0 5.8-2.6 5.8-5.8 0-1.4-.5-2.7-1.5-3.6z"/>
+                        </svg>
+                        <span class="cf-brand">Cloudflare</span>
+                      </div>
+                      <span class="cf-terms">Privacy • Terms</span>
+                    </div>
+                  </div>
+                  <input type="hidden" id="turnstile-verified" name="turnstileVerified" value="false">
+                  <span class="field-error" id="turnstile-error">Please complete the Cloudflare security verification</span>
+                </div>
+
+                <!-- Modern CTA Button -->
+                <div class="form-submit-container">
+                  <button type="submit" id="submit-inquiry-btn" class="btn btn-primary w-full btn-lg">
+                    <span>Send Inquiry (Protected by Cloudflare Turnstile)</span>
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <line x1="22" y1="2" x2="11" y2="13"/>
+                      <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                    </svg>
+                  </button>
+                </div>
+              </form>
+
+              <!-- Form Success Feedback (Hidden by Default) -->
+              <div id="form-success-card" class="form-success-state" style="display: none;">
+                <div class="success-icon-badge">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                    <polyline points="20 6 9 17 4 12"/>
+                  </svg>
+                </div>
+                <h3 class="success-title">Inquiry Successfully Transmitted</h3>
+                <p class="success-desc">
+                  Thank you for reaching out to WhizTech. Your project brief has been logged with reference ID <strong id="inquiry-ref">#WZT-8491</strong>. A Senior Architect will review your scope and follow up within 2 business hours.
+                </p>
+                <div class="success-action">
+                  <button class="btn btn-secondary btn-sm" onclick="resetLeadForm()">
+                    Submit Another Inquiry
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Interactive Consultation Modal -->
+  <div id="consultation-modal" class="modal-backdrop" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+    <div class="modal-dialog glass-panel">
+      <div class="modal-header">
+        <div>
+          <h3 id="modal-title" class="modal-title">Schedule a Consultation</h3>
+          <p class="modal-subtitle">Reserve a 30-minute technical discovery session with our engineering leads.</p>
+        </div>
+        <button class="modal-close-btn" onclick="closeConsultationModal()" aria-label="Close dialog">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <form id="consultation-form" class="modal-body" onsubmit="handleConsultationSubmit(event)">
+        <div class="form-group">
+          <label class="form-label" for="consult-name">Your Name</label>
+          <input type="text" id="consult-name" class="form-input" placeholder="e.g. Dr. Marcus Reed" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="consult-email">Company Email</label>
+          <input type="email" id="consult-email" class="form-input" placeholder="m.reed@enterprise.com" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="consult-focus">Discussion Focus</label>
+          <select id="consult-focus" class="form-select" required>
+            <option value="cloud">Cloud Architecture &amp; Migration</option>
+            <option value="software">Custom Enterprise Software</option>
+            <option value="mobile">Native Mobile App Strategy</option>
+            <option value="security">Cybersecurity &amp; SOC2 Audit</option>
+            <option value="cto">Fractional CTO Advisory</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="consult-date">Preferred Date</label>
+          <input type="date" id="consult-date" class="form-input" required>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" onclick="closeConsultationModal()">Cancel</button>
+          <button type="submit" class="btn btn-primary">Confirm Booking</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Legal Modals (Privacy, Terms, Security) -->
+  <div id="legal-modal" class="modal-backdrop" aria-hidden="true" role="dialog">
+    <div class="modal-dialog legal-dialog glass-panel">
+      <div class="modal-header">
+        <h3 id="legal-modal-title" class="modal-title">Security Statement</h3>
+        <button class="modal-close-btn" onclick="closeLegalModal()" aria-label="Close dialog">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div id="legal-modal-body" class="legal-content">
+        <!-- Injected via JavaScript -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" onclick="closeLegalModal()">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand-col">
+          <a href="#" class="brand-logo" aria-label="WhizTech Home">
+            <div class="logo-wrapper">
+              <img src="whiztech.png?v=2" alt="WhizTech" class="brand-img-logo">
+            </div>
+          </a>
+          <p class="footer-tagline">
+            Architecting resilient enterprise software, high-performance web applications, and autonomous cloud infrastructure.
+          </p>
+          <div class="footer-location-tag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon-sm">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span>Edmonton, Alberta, Canada</span>
+          </div>
+        </div>
+
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#capabilities">Capabilities</a></li>
+            <li><a href="#about">About WhizTech</a></li>
+            <li><a href="#testimonials">Client Testimonials</a></li>
+            <li><a href="#contact">Contact &amp; Intake</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Practices</h4>
+          <ul class="footer-links">
+            <li><a href="#services">Enterprise Software</a></li>
+            <li><a href="#services">Cloud Architecture</a></li>
+            <li><a href="#services">Mobile Applications</a></li>
+            <li><a href="#services">Cybersecurity Defense</a></li>
+            <li><a href="#services">Fractional CTO Advisory</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Direct Inquiries</h4>
+          <ul class="footer-links contact-meta-links">
+            <li>
+              <span class="meta-label">Email:</span>
+              <a href="mailto:info@whiztech.info">info@whiztech.info</a>
+            </li>
+            <li>
+              <span class="meta-label">Telephone:</span>
+              <a href="tel:+18254601154">+1 (825) 460 1154</a>
+            </li>
+            <li>
+              <span class="meta-label">Office:</span>
+              <span>17878 106 Ave NW, Edmonton, AB T5S 1V4</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="copyright-text">
+          &copy; 2026 WhizTech Solutions Inc. All rights reserved.
+        </div>
+        <div class="footer-quick-links">
+          <a href="#privacy" onclick="showLegalModal('privacy', event)">Privacy Policy</a>
+          <span class="dot-separator">&bull;</span>
+          <a href="#terms" onclick="showLegalModal('terms', event)">Terms of Service</a>
+          <span class="dot-separator">&bull;</span>
+          <a href="#security" onclick="showLegalModal('security', event)">Security Statement</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Floating Action Pill -->
+  <button id="back-to-top" class="back-to-top-btn" aria-label="Back to top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
