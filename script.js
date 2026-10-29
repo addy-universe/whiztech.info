@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initLiveArchitectureTelemetry();
   initScrollReveal();
   initBackToTop();
+  initServiceLearnMore();
 });
 
 /* ==========================================================================
@@ -568,6 +569,28 @@ function initBackToTop() {
 
   window.addEventListener('scroll', handleScroll, { passive: true });
   handleScroll();
+}
+
+/* ==========================================================================
+   Service "Learn More" Pre-selection & Interactive Scroll
+   ========================================================================== */
+function initServiceLearnMore() {
+  const learnMoreLinks = document.querySelectorAll('.service-learn-more-link');
+  const serviceSelect = document.getElementById('serviceNeeded');
+
+  learnMoreLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      const serviceVal = link.getAttribute('data-service');
+      if (serviceSelect && serviceVal) {
+        serviceSelect.value = serviceVal;
+        serviceSelect.dispatchEvent(new Event('input', { bubbles: true }));
+        serviceSelect.classList.remove('highlight-pulse');
+        // Force reflow for retriggering animation
+        void serviceSelect.offsetWidth;
+        serviceSelect.classList.add('highlight-pulse');
+      }
+    });
+  });
 }
 
 // Global exposure for inline HTML event handlers
