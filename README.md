@@ -1,6 +1,6 @@
-# WhizTech — Enterprise-Grade Software & Cloud Solutions
+# WhizTech — Enterprise IT Solutions, AI Automation & Government Projects
 
-High-end, responsive landing page for **WhizTech**, an IT and enterprise software engineering agency based in Edmonton, Alberta, Canada.
+High-end, responsive landing page for **WhizTech**, an enterprise IT infrastructure, AI automation, and government solutions firm based in Edmonton, Alberta, Canada.
 
 ---
 
