@@ -1067,15 +1067,15 @@
       <form id="consultation-form" class="modal-body" onsubmit="handleConsultationSubmit(event)">
         <div class="form-group">
           <label class="form-label" for="consult-name">Your Name</label>
-          <input type="text" id="consult-name" class="form-input" placeholder="e.g. Dr. Marcus Reed" required>
+          <input type="text" id="consult-name" name="consultName" class="form-input" placeholder="e.g. Dr. Marcus Reed" required>
         </div>
         <div class="form-group">
           <label class="form-label" for="consult-email">Company Email</label>
-          <input type="email" id="consult-email" class="form-input" placeholder="m.reed@enterprise.com" required>
+          <input type="email" id="consult-email" name="consultEmail" class="form-input" placeholder="m.reed@enterprise.com" required>
         </div>
         <div class="form-group">
           <label class="form-label" for="consult-focus">Discussion Focus</label>
-          <select id="consult-focus" class="form-select" required>
+          <select id="consult-focus" name="consultFocus" class="form-select" required>
             <option value="ai-automation">AI Automation &amp; Agentic Workflows</option>
             <option value="government-projects">Government &amp; Public Sector Projects</option>
             <option value="server-services">Server Services &amp; Architecture</option>
@@ -1088,12 +1088,14 @@
         </div>
         <div class="form-group">
           <label class="form-label" for="consult-date">Preferred Date</label>
-          <input type="date" id="consult-date" class="form-input" required>
+          <input type="date" id="consult-date" name="consultDate" class="form-input" required>
         </div>
 
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" onclick="closeConsultationModal()">Cancel</button>
-          <button type="submit" class="btn btn-primary">Confirm Booking</button>
+          <button type="submit" id="consult-submit-btn" class="btn btn-primary">
+            <span>Confirm Booking</span>
+          </button>
         </div>
       </form>
     </div>
